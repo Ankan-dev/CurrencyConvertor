@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="back">
+        <div class="container">
+            <h1 id="heading">Currency Converter</h1>
+            <form>
+                <div class="enter">
+                    <h3 id="enter-amt">Enter Amount</h3>
+                    <input type="text" id="input-box" value="0"/>
+                </div>
+                <div class="drop-down">
+                    <div class="select-container">
+                        <h4>From</h4>
+                        <div class="from">
+                            <img src="https://flagsapi.com/US/flat/64.png"/>
+                            <select name="from"></select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <div class="select-container">
+                        <h4>To</h4>
+                        <div class="to">
+                            <img src="https://flagsapi.com/IN/flat/64.png"/>
+                            <select name="to"></select>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn">Convert</button>
+            </form>
+            <div id="result">
+                <h2 id="value">No Result</h2>
+            </div>
+        </div>
+    </main>
+    <script src="countryCode.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
